@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Untitled UI - Full Components List</title>
+    <title>Untitled UI - Components</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
@@ -14,16 +14,24 @@
         font-family: "Inter", sans-serif;
         -webkit-font-smoothing: antialiased;
       }
+      .component-link {
+        @apply flex items-center gap-2 py-1 text-[17px] text-[#111827] hover:text-blue-600 transition-colors;
+      }
+      .dot {
+        @apply w-[6px] h-[6px] bg-[#3b82f6] rounded-full;
+      }
     </style>
   </head>
   <body class="bg-white text-[#111827]">
     <div class="max-w-6xl mx-auto py-20 px-10">
       <header class="mb-12">
-        <div class="flex justify-between items-start mb-6">
-          <h1 class="text-5xl font-semibold tracking-tight">Components</h1>
+        <div class="flex justify-between items-start mb-4">
+          <h1 class="text-[44px] font-semibold tracking-tight text-[#111827]">
+            Components
+          </h1>
           <div class="flex items-center gap-2">
             <button
-              class="flex items-center gap-2 px-3 py-1.5 border border-zinc-200 rounded-md text-sm font-medium hover:bg-zinc-50 transition-colors"
+              class="flex items-center gap-2 px-3 py-1.5 border border-zinc-200 rounded-md text-sm font-medium hover:bg-zinc-50 transition-all active:scale-95"
             >
               <svg
                 class="w-4 h-4"
@@ -39,350 +47,146 @@
                 />
               </svg>
               Copy Page
+              <svg
+                class="w-3 h-3 ml-1 opacity-50"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
+            <div class="flex border border-zinc-200 rounded-md overflow-hidden">
+              <button class="p-2 hover:bg-zinc-50 border-r border-zinc-200">
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15 19l-7-7 7-7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="p-2 hover:bg-zinc-50">
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 5l7 7-7 7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-        <p class="text-zinc-500 text-xl max-w-2xl leading-relaxed">
-          Полный список компонентов системы. Синие индикаторы отмечают готовые к
-          работе модули.
+        <p class="text-[#71717a] text-[18px] max-w-2xl leading-snug">
+          Here you can find all the components available in the library. We are
+          working on adding more components.
         </p>
       </header>
 
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-12 border-t border-zinc-100 pt-10"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-12 mt-16"
       >
-        <a
-          href="accordion.html"
-          class="group flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Accordion <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="alert-dialog.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Alert Dialog</a
-        >
-        <a
-          href="alert.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Alert</a
-        >
-        <a
-          href="aspect-ratio.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Aspect Ratio</a
-        >
-        <a
-          href="avatar.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Avatar</a
-        >
+        <a href="accordion.html" class="component-link">Accordion</a>
+        <a href="alert-dialog.html" class="component-link">Alert Dialog</a>
+        <a href="alert.html" class="component-link">Alert</a>
 
-        <a
-          href="badge.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Badge</a
-        >
-        <a
-          href="breadcrumb.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Breadcrumb <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="button.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Button <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="button-group.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Button Group</a
-        >
+        <a href="aspect-ratio.html" class="component-link">Aspect Ratio</a>
+        <a href="avatar.html" class="component-link">Avatar</a>
+        <a href="badge.html" class="component-link">Badge</a>
 
-        <a
-          href="calendar.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Calendar</a
-        >
-        <a
-          href="card.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Card</a
-        >
-        <a
-          href="carousel.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Carousel</a
-        >
-        <a
-          href="chart.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Chart</a
-        >
-        <a
-          href="checkbox.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Checkbox</a
-        >
-        <a
-          href="collapsible.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Collapsible <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="combobox.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Combobox</a
-        >
-        <a
-          href="command.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Command</a
-        >
-        <a
-          href="context-menu.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Context Menu</a
-        >
+        <a href="breadcrumb.html" class="component-link">Breadcrumb</a>
+        <a href="button-group.html" class="component-link"
+          >Button Group <span class="dot"></span
+        ></a>
+        <a href="button.html" class="component-link">Button</a>
 
-        <a
-          href="data-table.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Data Table</a
-        >
-        <a
-          href="date-picker.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Date Picker</a
-        >
-        <a
-          href="dialog.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Dialog</a
-        >
-        <a
-          href="dividers.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors font-medium text-black"
-        >
-          Dividers <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="drawer.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Drawer</a
-        >
-        <a
-          href="dropdown-menu.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Dropdown Menu</a
-        >
+        <a href="calendar.html" class="component-link">Calendar</a>
+        <a href="card.html" class="component-link">Card</a>
+        <a href="carousel.html" class="component-link">Carousel</a>
 
-        <a
-          href="empty.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Empty</a
-        >
-        <a
-          href="field.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Field</a
-        >
-        <a
-          href="form.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Form</a
-        >
-        <a
-          href="hover-card.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Hover Card</a
-        >
+        <a href="chart.html" class="component-link">Chart</a>
+        <a href="checkbox.html" class="component-link">Checkbox</a>
+        <a href="collapsible.html" class="component-link">Collapsible</a>
 
-        <a
-          href="input-text.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Input <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="input-group.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Input Group</a
-        >
-        <a
-          href="input-otp.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Input OTP</a
-        >
-        <a
-          href="item.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Item</a
-        >
+        <a href="combobox.html" class="component-link">Combobox</a>
+        <a href="command.html" class="component-link">Command</a>
+        <a href="context-menu.html" class="component-link">Context Menu</a>
 
-        <a
-          href="kbd.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Kbd</a
-        >
-        <a
-          href="label.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Label</a
-        >
-        <a
-          href="menubar.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Menubar</a
-        >
+        <a href="data-table.html" class="component-link">Data Table</a>
+        <a href="date-picker.html" class="component-link">Date Picker</a>
+        <a href="dialog.html" class="component-link">Dialog</a>
 
-        <a
-          href="select.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Native Select <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="navigation-menu.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
+        <a href="dividers.html" class="component-link font-medium"
+          >Dividers <span class="dot"></span
+        ></a>
+        <a href="drawer.html" class="component-link">Drawer</a>
+        <a href="dropdown-menu.html" class="component-link">Dropdown Menu</a>
+
+        <a href="empty.html" class="component-link"
+          >Empty <span class="dot"></span
+        ></a>
+        <a href="field.html" class="component-link"
+          >Field <span class="dot"></span
+        ></a>
+        <a href="form.html" class="component-link">Form</a>
+
+        <a href="hover-card.html" class="component-link">Hover Card</a>
+        <a href="input-group.html" class="component-link"
+          >Input Group <span class="dot"></span
+        ></a>
+        <a href="input-otp.html" class="component-link">Input OTP</a>
+
+        <a href="input-text.html" class="component-link">Input</a>
+        <a href="item.html" class="component-link"
+          >Item <span class="dot"></span
+        ></a>
+        <a href="kbd.html" class="component-link"
+          >Kbd <span class="dot"></span
+        ></a>
+
+        <a href="label.html" class="component-link">Label</a>
+        <a href="menubar.html" class="component-link">Menubar</a>
+        <a href="select.html" class="component-link"
+          >Native Select <span class="dot"></span
+        ></a>
+        <a href="skeleton.html" class="component-link"
+          >Skeleton <span class="dot"></span
+        ></a>
+
+        <a href="navigation-menu.html" class="component-link"
           >Navigation Menu</a
         >
-        <a
-          href="pagination.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Pagination <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-        <a
-          href="popover.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Popover</a
-        >
-        <a
-          href="progress.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Progress</a
-        >
-        <a
-          href="pill-component.html"
-          class="flex items-center justify-between py-1 text-lg hover:text-black transition-colors"
-        >
-          Pill Component <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-        </a>
-
-        <a
-          href="radio-group.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Radio Group</a
-        >
-        <a
-          href="resizable.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Resizable</a
-        >
-        <a
-          href="scroll-area.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Scroll Area</a
-        >
-        <a
-          href="select-custom.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Select (Custom)</a
-        >
-        <a
-          href="separator.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Separator</a
-        >
-        <a
-          href="sheet.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Sheet</a
-        >
-        <a
-          href="sidebar.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Sidebar</a
-        >
-        <a
-          href="skeleton.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Skeleton</a
-        >
-        <a
-          href="slider.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Slider</a
-        >
-        <a
-          href="sonner.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Sonner</a
-        >
-        <a
-          href="spinner.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Spinner</a
-        >
-        <a
-          href="switch.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Switch</a
-        >
-
-        <a
-          href="table.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Table</a
-        >
-        <a
-          href="tabs.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Tabs</a
-        >
-        <a
-          href="textarea.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Textarea</a
-        >
-        <a
-          href="toast.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Toast</a
-        >
-        <a
-          href="toggle-group.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Toggle Group</a
-        >
-        <a
-          href="toggle.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Toggle</a
-        >
-        <a
-          href="tooltip.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Tooltip</a
-        >
-        <a
-          href="typography.html"
-          class="py-1 text-lg text-zinc-400 hover:text-black transition-colors"
-          >Typography</a
-        >
+        <a href="pill-component.html" class="component-link"
+          >Pill Component <span class="dot"></span
+        ></a>
+        <a href="pagination.html" class="component-link">Pagination</a>
       </div>
 
       <footer
         class="mt-32 pt-8 border-t border-zinc-100 text-zinc-400 text-sm flex justify-between"
       >
         <span>© 2026 Untitled UI Kit.</span>
-        <div class="flex gap-4">
-          <a href="#" class="hover:text-black">Documentation</a>
-          <a href="#" class="hover:text-black">GitHub</a>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-black transition-colors">Docs</a>
+          <a href="#" class="hover:text-black transition-colors">GitHub</a>
         </div>
       </footer>
     </div>

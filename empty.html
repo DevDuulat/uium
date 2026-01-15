@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black UI Kit - Empty State</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-zinc-900 selection:bg-black selection:text-white">
+    <div class="flex min-h-screen items-center justify-center p-6">
+      <div class="max-w-[420px] w-full text-center">
+        <div
+          class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-zinc-50 border border-zinc-100 mb-6"
+        >
+          <svg
+            class="w-6 h-6 text-zinc-900"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 12.75v3.75m2.25-2.25H9.75"
+            />
+          </svg>
+        </div>
+
+        <h2 class="text-xl font-bold tracking-tight text-black mb-2">
+          No Projects Yet
+        </h2>
+        <p class="text-sm text-zinc-500 leading-relaxed mb-8">
+          You haven't created any projects yet. Get started by creating your
+          first project.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-3 justify-center items-center"
+        >
+          <button
+            class="w-full sm:w-auto h-11 px-6 bg-zinc-950 text-white text-sm font-semibold rounded-lg hover:bg-zinc-800 transition-colors shadow-sm"
+          >
+            Create Project
+          </button>
+          <button
+            class="w-full sm:w-auto h-11 px-6 bg-zinc-50 border border-zinc-200 text-zinc-900 text-sm font-semibold rounded-lg hover:bg-white hover:border-zinc-300 transition-all shadow-sm"
+          >
+            Import Project
+          </button>
+        </div>
+
+        <div class="mt-8">
+          <a
+            href="#"
+            class="inline-flex items-center gap-1.5 text-sm text-zinc-500 hover:text-black font-medium transition-colors group"
+          >
+            Learn More
+            <svg
+              class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed bottom-10 left-1/2 -translate-x-1/2">
+      <a
+        href="index.html"
+        class="px-4 py-2 bg-white/80 backdrop-blur-md border border-zinc-200 rounded-full text-[10px] font-bold uppercase tracking-widest text-zinc-400 hover:text-black transition-colors"
+      >
+        Back to Library
+      </a>
+    </div>
+  </body>
+</html>

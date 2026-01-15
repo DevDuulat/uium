@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black UI Kit - Label</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-zinc-900 selection:bg-black selection:text-white">
+    <div
+      class="flex flex-col min-h-screen items-center justify-center p-6 space-y-16"
+    >
+      <div class="text-center space-y-2">
+        <h1 class="text-2xl font-bold tracking-tight">Label / Badge</h1>
+        <p class="text-zinc-500 text-sm">
+          Компактные индикаторы статуса и теги.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
+        <section class="space-y-4">
+          <h2
+            class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400"
+          >
+            01. Standard
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-900 text-white transition-colors hover:bg-zinc-800 cursor-default"
+            >
+              Default
+            </span>
+            <span
+              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-100 text-zinc-900 border border-zinc-200 transition-colors hover:bg-zinc-200/50 cursor-default"
+            >
+              Secondary
+            </span>
+            <span
+              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border border-zinc-200 text-zinc-900 transition-colors hover:bg-zinc-50 cursor-default"
+            >
+              Outline
+            </span>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2
+            class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400"
+          >
+            02. Status
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs font-medium bg-zinc-50 text-zinc-900 border border-zinc-100"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-zinc-900"></span>
+              Active
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs font-medium bg-white text-zinc-400 border border-zinc-100"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-zinc-200"></span>
+              Inactive
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs font-medium bg-red-50 text-red-600 border border-red-100"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+              Failed
+            </span>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2
+            class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400"
+          >
+            03. With Icon
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="inline-flex items-center gap-1 px-2 py-0.5 bg-zinc-100 text-zinc-900 text-[11px] font-bold rounded border border-zinc-200"
+            >
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+              NEW
+            </span>
+            <span
+              class="inline-flex items-center gap-1 px-2 py-0.5 bg-black text-white text-[11px] font-bold rounded"
+            >
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 19.7778H22L12 2Z" />
+              </svg>
+              PRO
+            </span>
+          </div>
+        </section>
+
+        <section
+          class="space-y-4"
+          x-data="{ items: ['Next.js', 'React', 'Tailwind'] }"
+        >
+          <h2
+            class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400"
+          >
+            04. Interactive
+          </h2>
+          <div class="flex flex-wrap gap-2">
+            <template x-for="item in items" :key="item">
+              <span
+                class="inline-flex items-center gap-1 px-2 py-0.5 bg-zinc-100 text-zinc-900 text-sm font-medium rounded-md border border-zinc-200 transition-all hover:border-zinc-300"
+              >
+                <span x-text="item"></span>
+                <button
+                  @click="items = items.filter(i => i !== item)"
+                  class="text-zinc-400 hover:text-black transition-colors"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </span>
+            </template>
+            <button
+              x-show="items.length === 0"
+              @click="items = ['Next.js', 'React', 'Tailwind']"
+              class="text-xs text-zinc-400 hover:text-black underline"
+            >
+              Reset
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="fixed bottom-10 left-1/2 -translate-x-1/2">
+      <a
+        href="index.html"
+        class="px-4 py-2 bg-white/80 backdrop-blur-md border border-zinc-200 rounded-full text-[10px] font-bold uppercase tracking-widest text-zinc-400 hover:text-black transition-colors"
+      >
+        Back to Library
+      </a>
+    </div>
+  </body>
+</html>
