@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black UI Kit - Pagination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white selection:bg-black selection:text-white text-zinc-900">
+    <div class="max-w-3xl mx-auto py-20 px-6">
+      <div class="mb-16 border-b border-zinc-100 pb-10 text-center">
+        <h1 class="text-3xl font-bold text-black tracking-tight mb-2">
+          Pagination
+        </h1>
+        <p class="text-zinc-500">Компоненты пагинации в стиле Black UI.</p>
+      </div>
+
+      <div class="space-y-20">
+        <section class="space-y-6 text-center">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            01. Classic Numbers
+          </h2>
+          <nav class="inline-flex items-center -space-x-px">
+            <a
+              href="#"
+              class="px-3 py-2 ml-0 leading-tight text-zinc-500 bg-white border border-zinc-200 rounded-l-xl hover:bg-zinc-50 hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="px-4 py-2 leading-tight text-zinc-500 bg-white border border-zinc-200 hover:bg-zinc-50 hover:text-black transition-colors"
+              >1</a
+            >
+            <a
+              href="#"
+              class="px-4 py-2 leading-tight text-zinc-500 bg-white border border-zinc-200 hover:bg-zinc-50 hover:text-black transition-colors"
+              >2</a
+            >
+            <span
+              class="px-4 py-2 leading-tight text-white bg-black border border-black z-10"
+              >3</span
+            >
+            <a
+              href="#"
+              class="px-4 py-2 leading-tight text-zinc-500 bg-white border border-zinc-200 hover:bg-zinc-50 hover:text-black transition-colors"
+              >4</a
+            >
+            <a
+              href="#"
+              class="px-4 py-2 leading-tight text-zinc-500 bg-white border border-zinc-200 rounded-r-xl hover:bg-zinc-50 hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </nav>
+        </section>
+
+        <section class="space-y-6 text-center">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            02. Borderless
+          </h2>
+          <nav class="flex justify-center items-center space-x-2">
+            <a
+              href="#"
+              class="p-2 text-zinc-400 hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium text-zinc-500 hover:bg-zinc-100 transition-all"
+              >1</a
+            >
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-bold bg-black text-white shadow-lg shadow-zinc-200"
+              >2</a
+            >
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium text-zinc-500 hover:bg-zinc-100 transition-all"
+              >3</a
+            >
+            <span class="text-zinc-300">...</span>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium text-zinc-500 hover:bg-zinc-100 transition-all"
+              >12</a
+            >
+            <a
+              href="#"
+              class="p-2 text-zinc-400 hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </nav>
+        </section>
+
+        <section class="space-y-6 text-center">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            03. Simple Controls
+          </h2>
+          <div class="flex items-center justify-center gap-4">
+            <button
+              class="flex items-center gap-2 px-5 py-2.5 text-sm font-semibold border border-zinc-200 rounded-xl hover:bg-zinc-50 transition-all active:scale-95 disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
+              </svg>
+              Назад
+            </button>
+            <span class="text-sm font-medium text-zinc-400 tracking-tighter"
+              >Страница <span class="text-black font-bold">4</span> из 10</span
+            >
+            <button
+              class="flex items-center gap-2 px-5 py-2.5 text-sm font-semibold border border-zinc-200 rounded-xl hover:bg-zinc-50 transition-all active:scale-95"
+            >
+              Вперед
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <footer class="mt-24 pt-10 border-t border-zinc-100 text-center">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-black hover:opacity-60 transition-opacity"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+          Вернуться на главную
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

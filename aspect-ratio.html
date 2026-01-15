@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black UI Kit - Aspect Ratio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white selection:bg-black selection:text-white text-zinc-900">
+    <div class="max-w-4xl mx-auto py-20 px-6">
+      <div class="mb-16 border-b border-zinc-100 pb-10 text-center">
+        <h1 class="text-3xl font-bold text-black tracking-tight mb-2">
+          Aspect Ratio
+        </h1>
+        <p class="text-zinc-500">
+          Управление пропорциями контента в стиле Black UI.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <section class="space-y-4">
+          <div class="flex justify-between items-end">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-zinc-400"
+            >
+              01. Square (1:1)
+            </h2>
+            <span class="text-[10px] font-mono text-zinc-300"
+              >aspect-square</span
+            >
+          </div>
+          <div
+            class="aspect-square w-full bg-zinc-100 rounded-2xl overflow-hidden border border-zinc-200 group relative"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800"
+              alt="Abstract"
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity pointer-events-none"
+            >
+              <span
+                class="bg-white px-3 py-1 rounded-full text-[10px] font-bold shadow-sm"
+                >1:1</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div class="flex justify-between items-end">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-zinc-400"
+            >
+              02. Video (16:9)
+            </h2>
+            <span class="text-[10px] font-mono text-zinc-300"
+              >aspect-video</span
+            >
+          </div>
+          <div
+            class="aspect-video w-full bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200 flex items-center justify-center relative group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+            ></div>
+            <button
+              class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5 ml-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div class="flex justify-between items-end">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-zinc-400"
+            >
+              03. Portrait (3:4)
+            </h2>
+            <span class="text-[10px] font-mono text-zinc-300"
+              >aspect-[3/4]</span
+            >
+          </div>
+          <div
+            class="aspect-[3/4] w-full bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200"
+          >
+            <div
+              class="w-full h-full flex items-center justify-center text-zinc-300 font-bold text-2xl tracking-tighter uppercase italic"
+            >
+              Portrait
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4 md:col-span-2">
+          <div class="flex justify-between items-end">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-zinc-400"
+            >
+              04. Ultrawide (21:9)
+            </h2>
+            <span class="text-[10px] font-mono text-zinc-300"
+              >aspect-[21/9]</span
+            >
+          </div>
+          <div
+            class="aspect-[21/9] w-full bg-black rounded-2xl overflow-hidden relative border border-zinc-800"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200"
+              alt="Landscape"
+              class="w-full h-full object-cover opacity-60"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-white p-6"
+            >
+              <h3 class="text-xl font-bold tracking-tighter">Cinematic View</h3>
+              <p class="text-xs text-white/60 uppercase tracking-widest mt-2">
+                Perfect for Hero sections
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="mt-24 pt-10 border-t border-zinc-100 text-center">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-black hover:opacity-60 transition-opacity"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+          Вернуться на главную
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
