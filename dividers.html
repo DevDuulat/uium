@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black UI Kit - Dividers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white selection:bg-black selection:text-white text-zinc-900">
+    <div class="max-w-2xl mx-auto py-20 px-6">
+      <div class="mb-16 border-b border-zinc-100 pb-10 text-center">
+        <h1 class="text-3xl font-bold text-black tracking-tight mb-2">
+          Dividers
+        </h1>
+        <p class="text-zinc-500">
+          Элементы разделения контента в стиле Black UI.
+        </p>
+      </div>
+
+      <div class="space-y-20">
+        <section class="space-y-4">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            01. Simple Line
+          </h2>
+          <hr class="border-zinc-100" />
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            02. Text Centered
+          </h2>
+          <div class="flex items-center">
+            <div class="h-px flex-1 bg-zinc-100"></div>
+            <span
+              class="shrink-0 px-4 text-xs font-bold uppercase tracking-[0.2em] text-zinc-400"
+            >
+              Continue with
+            </span>
+            <div class="h-px flex-1 bg-zinc-100"></div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            03. Content Left
+          </h2>
+          <div class="flex items-center">
+            <span
+              class="shrink-0 pr-4 text-sm font-bold text-black tracking-tight"
+            >
+              Settings & Privacy
+            </span>
+            <div class="h-px flex-1 bg-black"></div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            04. With Icon
+          </h2>
+          <div class="flex items-center">
+            <div class="h-px flex-1 bg-zinc-100"></div>
+            <div class="shrink-0 px-3 text-zinc-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                />
+              </svg>
+            </div>
+            <div class="h-px flex-1 bg-zinc-100"></div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            05. Content Right
+          </h2>
+          <div class="flex items-center">
+            <div class="h-px flex-1 bg-zinc-200"></div>
+            <span
+              class="shrink-0 pl-4 text-xs font-medium text-zinc-500 italic"
+            >
+              Step 2 of 5
+            </span>
+          </div>
+        </section>
+      </div>
+
+      <footer class="mt-24 pt-10 border-t border-zinc-100 text-center">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-black hover:opacity-60 transition-opacity"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Вернуться на главную
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
